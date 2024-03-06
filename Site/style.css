@@ -4,6 +4,7 @@
     background-position: 50%;
     background-repeat: no-repeat;
     background-size:cover;
+    text-align: center;
 }
 
 #ligue1{
@@ -12,6 +13,27 @@
     margin-bottom: 40px;
     background-repeat: no-repeat;
     background-size:cover;
+}
+
+a {
+    color: black;
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.75);
+    border: 2px solid rgb(153, 133, 109);
+    padding: 5px 10px;
+    display: inline-block;
+    transition: color 0.2s ease-in-out;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+    border-color: black;
+}
+
+.logo-link img {
+    width: 50px;   /* Spécifiez la largeur souhaitée en pixels */
+    height: 50px;   /* Spécifiez la hauteur souhaitée en pixels */
 }
 
 #liga{
@@ -85,12 +107,10 @@ header {
     margin-bottom: 10px;
     padding: 8px;
     box-sizing: border-box;
-}
-
-.Connexion a {
     text-decoration: none;
     color: blue;
 }
+
 
 .titrechamp{
     text-align: center;
@@ -122,3 +142,54 @@ header {
     color: #999;
 }
 
+#registrationForm {
+    width: 60%;
+    margin: 0 auto;
+    padding: 30px;
+    border: 2px solid #0c0a01;
+    background-color: rgba(255, 255, 255, 0.45);
+}
+
+#registrationForm form.val {
+    background-color: #98822f;
+    width: 80px;
+    /* Augmentez la largeur selon vos besoins */
+    margin: auto auto;
+    /* Centrer le formulaire */
+    padding: 0;
+    border: 2px solid black;
+    position: relative;
+}
+
+
+#registrationForm input[type=text],
+#registrationForm input[type=password],
+#registrationForm textarea {
+    width: 45%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid black;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+
+#submitButton {
+    width: 45%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+#submitButton:hover {
+    padding: 12px 20px;
+    margin: 8px 0;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}

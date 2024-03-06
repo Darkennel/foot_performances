@@ -22,7 +22,8 @@
             <input type="submit" value="Se connecter">
         </form>
         <a href="#">Mot de passe oublié ?</a>
-        <a href="acceuilInvite.html">Invité ?</a>
+        <a href="nouveau.php">Créer un compte ?</a>
+        <a href="acceuilInvite.php">Invité ?</a>
     </div>
 
 

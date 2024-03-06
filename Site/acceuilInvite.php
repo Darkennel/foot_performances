@@ -11,7 +11,9 @@
             <img src="logo.png" alt="Logo de votre site">
         </div>
         <h1 class="titre-site">Les performances des attaquants de foot</h1>
-        
+        <a href="index.html" class="logo-link">
+            <img src="connexion.jpg" alt="Logo de connexion">
+        </a>
 
     </header>
 
