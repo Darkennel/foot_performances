@@ -7,6 +7,23 @@
     text-align: center;
 }
 
+.messafond{
+    background-image: url('images.jpeg');
+    height: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.forminsc{
+    background-image: url('FondForm.jpg');
+    height: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size:cover;
+    text-align: center;
+}
+
 #ligue1{
     background-image: url('ligue1.jpeg');
     height: 100%;
@@ -72,6 +89,10 @@ header {
     text-align: center; 
 }
 
+.loupe-logo{
+    width: 8%;
+}
+
 .championnats {
     background-color: rgba(204, 204, 204, 0.5);
     display: flex; 
@@ -86,6 +107,7 @@ header {
 
 
 .Connexion {
+    width: 20%;
     background-color: rgb(172, 169, 169);
     position: absolute;
     top: 50%;
@@ -93,21 +115,17 @@ header {
     transform: translate(-50%, -50%);
     text-align: center;
     border: 2px solid black;
-    padding: 20px;
-    max-width: 300px;
-    width: 100%;
+    padding: 33px;
 }
 
 .Connexion input[type="text"],
 .Connexion input[type="password"],
 .Connexion input[type="submit"],
 .Connexion a {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
+    width: 40%;
+    margin-bottom: 5px;
     padding: 8px;
     box-sizing: border-box;
-    text-decoration: none;
     color: blue;
 }
 
@@ -117,7 +135,8 @@ header {
 }
 
 .search-bar {
-    margin-top: -10px;
+    margin-top: -35px;
+    margin-left: 56%;
     display: flex;
     align-items: center;
 }
@@ -128,37 +147,35 @@ header {
     border-radius: 4px;
 }
  
-.search-bar button {
-    padding: 8px 12px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    margin-left: 5px;
-    cursor: pointer;
-}
 
 .search-bar input[type="text"]::placeholder {
     color: #999;
 }
 
+.mdpoublie{
+    font-size: 20px;
+    width: 50%;
+    margin: 30px;
+    padding: 3%;
+    margin-top: 39px;
+}
+
 #registrationForm {
-    width: 60%;
-    margin: 0 auto;
-    padding: 30px;
+    width: 50%;
+    margin: 20px;
+    padding: 1%;
+    margin-top: 20px;
     border: 2px solid #0c0a01;
-    background-color: rgba(255, 255, 255, 0.45);
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.45); 
 }
 
 #registrationForm form.val {
     background-color: #98822f;
     width: 80px;
-    /* Augmentez la largeur selon vos besoins */
-    margin: auto auto;
-    /* Centrer le formulaire */
-    padding: 0;
+    margin: 20px 20px;
+    padding: 10;
     border: 2px solid black;
-    position: relative;
 }
 
 
@@ -175,21 +192,69 @@ header {
 }
 
 
+
 #submitButton {
-    width: 45%;
-    padding: 12px 20px;
-    margin: 8px 0;
+    padding: 10px 12px;
+    margin: 5px 0;
     background-color: black;
     color: white;
     border: none;
     cursor: pointer;
-    width: 100%;
+    width: 16%;
 }
 
 #submitButton:hover {
-    padding: 12px 20px;
-    margin: 8px 0;
+    padding: 10px 12px;
+    margin: 5px 0;
     background-color: white;
     color: black;
     border: 1px solid black;
+}
+
+
+
+#logdis {
+    float: right;
+    width: 200px;
+    display: block; 
+    margin-right: 12%; 
+    margin-top: -10%;
+    image-rendering: auto;
+}
+
+#messageContainer {
+    width: 60%; 
+    border: 2px solid #ddd; 
+    padding: 10px; 
+    background-color: #fff; 
+    max-height: 500px; 
+    overflow-y: auto; 
+}
+
+#messageForm {
+    margin-bottom: 15px; 
+}
+
+#messageForm textarea {
+    width: 100%;
+    margin-bottom: 10px; 
+}
+
+section {
+    border-top: 2px solid #ddd; 
+    padding-top: 10px; 
+}
+
+section p {
+    margin-bottom: 10px; 
+}
+
+
+.rendrelisible {
+    Border: 3px solid black;
+    padding: 8;
+    background-color: rgba(255, 255, 255, 0.75);
+    width: 70%;
+    height: 670px;
+    margin-left: 20px;
 }
