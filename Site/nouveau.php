@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class = "acceuil">
+<html class = "forminsc">
 
 <head>
     <title>Nouveau</title>
