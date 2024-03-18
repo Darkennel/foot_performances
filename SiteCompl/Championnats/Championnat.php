@@ -115,14 +115,27 @@
         </div>
     </main>
 
-    <footer>
-        <img src="/Site/Image/logo.png" alt="Logo du footer" class="logo-footer-left">
-        <div class="social-icons">
-            <a href="#"><img src="facebook.png" alt="Facebook"></a>
-            <a href="#"><img src="instagram.png" alt="Instagram"></a>
-            <a href="#"><img src="twitter.png" alt="Twitter"></a>
+    <footer> 
+    <div class="logo-footer">
+            <img src="/Site/Image/logo.png" alt="Logo du footer" class="logo-footer-left">
+        </div> 
+     <div class="social-icons">
+        
+        <div class="menu-footer">
+            <ul>
+                <li>
+                    <a href="/Site/Leganotices.php">Infos légales</a>
+                </li>
+                <li>
+                    <a href="/Site/Contact.php">Contact</a>
+                </li> 
+                <li>
+                    <a href="/Site/Conditions.php">Conditions d'utilisation</a>
+                </li>  
+            </ul>
         </div>
-    </footer>
+    </div>          
+</footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>

@@ -27,7 +27,11 @@ html, body {
     color: #fff;
     padding: 20px;
     text-align: center;
-    position: relative;
+    position: fixed; /* Fixe le header en haut de la fenêtre du navigateur */
+    top: 0; /* Place le header en haut de la fenêtre */
+    left: 0;
+    right: 0;
+    z-index: 9999; 
     border-radius: 15px; /* Bordures arrondies */
     margin-bottom: 20px; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajoute une légère ombre portée */
@@ -43,20 +47,23 @@ html, body {
 
 .logo-left {
     position: absolute;
-    top: 2px;
-    left: 2px;
-    width: 50px;
+    top: 14px;
+    left: 23px;
+    width: 100px;
     height: auto;
     margin-right: 10px;
+    border-radius: 10px; 
+
 }
 
 .logo-right {
     position: absolute;
-    top: 2px;
-    right: 5px;
-    width: 50px;
+    top: 23px;
+    right: 23px;
+    width: 70px;
     height: auto;
     margin-left: 10px;
+    border-radius: 10px; 
 }
 
 .header-block h1 {
@@ -140,6 +147,10 @@ html, body {
 
 
 /* Styles pour le contenu principal */
+main {
+    margin-top: 150px; /* Ajustez la valeur en fonction de la hauteur de votre header */
+    margin-bottom: 60px; /* Ajustez la valeur en fonction de la hauteur de votre footer */
+}
 .content {
     display: flex;
     flex-direction: column;
@@ -204,10 +215,7 @@ th {
     background-color: #065391;
     color: white;
 }
-.logo {
-    max-width: 50px;
-    height: auto;
-}
+
 
 /* Styles pour le texte */
 td {
@@ -220,26 +228,31 @@ td {
 footer {
     background-color: #065391;
     color: #fff;
-    padding: 20px;
+    padding: -2px;
     text-align: center;
-    position: relative;
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
     border-radius: 15px;
     margin-top: auto;
 }
 
-.logo-footer-left {
-    position: absolute;
-    bottom: 1px;
-    left: 1px;
-    width: 2em;
-    height: 100%;
+.logo-footer{
+    position: relative;
+    bottom: -3px;
+    left: 10px;
+    width: 20px;
+    height: auto;
     margin-right: 10px;
 }
 
 .social-icons {
     position: absolute;
     bottom: 10px;
-    right: 5px;
+    right: 20px;
+    
 }
 
 .social-icons a {
@@ -247,10 +260,38 @@ footer {
     margin-left: 10px;
     color: #fff;
 }
+.logo-footer-left {
 
-.social-icons a:first-child {
-    margin-left: 0;
+    width: 40px;
+    height: auto;
+    border-radius: 15px;
+    
 }
+.menu-footer {
+    position: relative;
+    display: inline-block;
+    width: auto; /* Pour ajuster automatiquement la largeur en fonction du contenu */
+}
+.menu-footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Pour centrer horizontalement les éléments <li> */
+}
+    
+
+.menu-footer ul li {
+    display: inline-block;
+    margin-right: 20px; /* Espace entre les éléments de liste */
+    flex: 0 0 auto; /* Pour que les éléments <li> ne changent pas de taille */
+}
+.menu-footer ul li:last-child {
+    margin-right: 0;/* Supprime la marge à gauche du premier élément de la liste */
+}
+
+    
 
 #graphContainer {
     width: 30%; /* Ajustez la largeur selon votre mise en page */
