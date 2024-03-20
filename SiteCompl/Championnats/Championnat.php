@@ -61,7 +61,7 @@
                             echo "<tr>";
                             echo "<td>" . $championnat['Ligue'] . "</td>";
                             echo '<td><img src="' . $championnat['url_Logo'] . '" alt="Logo" id="LogoCh"></td>';
-                            echo '<td><img src="' . $championnat['url_Pays'] . '" alt="Image Pays"></td>';
+                            echo '<td><img src="' . $championnat['url_Pays'] . '" alt="Image Pays", id="LogoCh"></td>';
                             echo "</tr>";
                             echo "</table>";
                         } else {
@@ -124,7 +124,7 @@
         <div class="menu-footer">
             <ul>
                 <li>
-                    <a href="/Site/Leganotices.php">Infos légales</a>
+                    <a href="/Site/Legalnotices.php">Infos légales</a>
                 </li>
                 <li>
                     <a href="/Site/Contact.php">Contact</a>

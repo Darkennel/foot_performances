@@ -50,7 +50,7 @@
         <div class="menu-footer">
             <ul>
                 <li>
-                    <a href="/Site/Leganotices.php">Infos légales</a>
+                    <a href="/Site/Legalnotices.php">Infos légales</a>
                 </li>
                 <li>
                     <a href="/Site/Contact.php">Contact</a>
