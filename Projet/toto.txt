@@ -1,0 +1,5 @@
+<<<<<<< HEAD
+#Bonjour
+=======
+salut 
+>>>>>>> e2de71c7af4c5969d501b560cfa2be5d8e334fb0

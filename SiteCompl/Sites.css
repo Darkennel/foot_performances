@@ -1,0 +1,318 @@
+/* Réinitialisation des styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles généraux */
+body {
+    background-color: rgba(236, 241, 247, 255);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: black;
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles pour le header */
+.header-block {
+    background-color: #065391;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed; /* Fixe le header en haut de la fenêtre du navigateur */
+    top: 0; /* Place le header en haut de la fenêtre */
+    left: 0;
+    right: 0;
+    z-index: 9999; 
+    border-radius: 15px; /* Bordures arrondies */
+    margin-bottom: 20px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajoute une légère ombre portée */
+}
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Pour que les éléments à l'intérieur soient répartis uniformément sur l'axe principal */
+    height: 100%; /* Pour que la div header-content occupe toute la hauteur du header */
+}
+
+
+
+.logo-left {
+    position: absolute;
+    top: 14px;
+    left: 23px;
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 10px; 
+
+}
+
+.logo-right {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    width: 70px;
+    height: auto;
+    margin-left: 10px;
+    border-radius: 10px; 
+}
+
+.header-block h1 {
+    margin-bottom: 10px;
+    font-size: 36px; /* Augmente la taille du titre */
+    font-family: 'Arial', sans-serif; /* Utilise une police de caractères plus standard */
+}
+
+.navi {
+    display: flex;
+    justify-content: center; /* Pour centrer les éléments horizontalement */ 
+    padding: 10px; /* Ajout de marge à l'intérieur */
+    margin-top: auto; /* Pour occuper tout l'espace disponible */
+    width: 100%; /* Pour prendre toute la largeur disponible */
+    
+}
+
+
+
+
+.navi ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+}
+
+.navi ul li {
+    display: inline-block;
+    margin-right: 20px;
+    width: auto;
+}
+
+.navi ul li:last-child {
+    margin-right: 0;
+}
+
+.navi ul li a {
+    color: #fff;
+    text-decoration: none;
+    opacity: 0.9;
+    transition: opacity 0.3s;
+    font-size: 18px;
+    padding-bottom: 3px;
+}
+
+.navi ul li:hover {
+    text-decoration: underline;
+    background-color: #f0f0f0;
+}
+
+
+.navi ul li:hover a {
+    opacity: 1;
+}
+
+.navi ul li a:hover {
+    opacity: 1;
+    color: gray; /* Change la couleur au survol */
+    transform: translateY(-3px); /* Décale légèrement vers le haut */
+}
+
+
+.title-and-search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.title-and-search h1 {
+    margin-right: 60px;
+    
+}
+.title-and-search .search-form button {
+    display: none; /* Cache le bouton de recherche */
+}
+
+
+
+/* Styles pour le contenu principal */
+main {
+    margin-top: 150px; /* Ajustez la valeur en fonction de la hauteur de votre header */
+    margin-bottom: 60px; /* Ajustez la valeur en fonction de la hauteur de votre footer */
+}
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Styles pour les différentes parties du contenu principal */
+.container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    padding: 20px;
+    align-items: flex-start; 
+}
+
+.container > div {
+    flex: 1 1 auto; /* Réglez flex-grow, flex-shrink et flex-basis respectivement */
+    padding: 20px;
+    border-radius: 15px; /* Bordures arrondies */
+    background-color: #fff; /* Fond blanc pour contraste */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre pour donner un effet de profondeur */
+    margin-bottom: 20px; /* Marge en bas pour séparer des autres sections */
+    margin-right: 20px; /* Ajout de marge à droite */
+    
+}
+.table-container {
+    flex: 2 1 auto; /* Augmenter la taille du div contenant le tableau */
+}
+.data-container {
+    flex: 1 1 auto; /* Réglez flex-grow, flex-shrink et flex-basis respectivement */
+    padding: 20px;
+    border-radius: 15px; /* Bordures arrondies */
+    background-color: #fff; /* Fond blanc pour contraste */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre pour donner un effet de profondeur */
+    margin-bottom: 20px; /* Marge en bas pour séparer des autres sections */
+    margin-right: 20px; /* Ajout de marge à droite */
+}
+.table-container h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+
+
+#LogoCh {
+    max-width: 50px;
+    height: auto;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 2px solid #000;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+th {
+    background-color: #065391;
+    color: white;
+}
+
+
+/* Styles pour le texte */
+td {
+    font-family: 'Arial', sans-serif; /* Police de caractères */
+    font-size: 16px; /* Taille de texte */
+}
+
+
+/* Styles pour le footer */
+footer {
+    background-color: #065391;
+    color: #fff;
+    padding: -2px;
+    text-align: center;
+    position:fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    border-radius: 15px;
+    margin-top: auto;
+}
+
+.logo-footer{
+    position: relative;
+    bottom: -3px;
+    left: 10px;
+    width: 20px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.social-icons {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-left: 10px;
+    color: #fff;
+}
+.logo-footer-left {
+
+    width: 40px;
+    height: auto;
+    border-radius: 15px;
+    
+}
+.menu-footer {
+    position: relative;
+    display: inline-block;
+    width: auto; /* Pour ajuster automatiquement la largeur en fonction du contenu */
+}
+.menu-footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center; /* Pour centrer horizontalement les éléments <li> */
+}
+    
+
+.menu-footer ul li {
+    display: inline-block;
+    margin-right: 20px; /* Espace entre les éléments de liste */
+    flex: 0 0 auto; /* Pour que les éléments <li> ne changent pas de taille */
+}
+.menu-footer ul li:last-child {
+    margin-right: 0;/* Supprime la marge à gauche du premier élément de la liste */
+}
+
+    
+
+#graphContainer {
+    width: 30%; /* Ajustez la largeur selon votre mise en page */
+    height: 400px; /* Définissez une hauteur appropriée */
+    overflow: hidden;
+}
+
+.MIASHS{
+    text-align: initial;
+    padding: 2rem;
+    font-family: 'Roboto';
+    font-size: 16px;
+}
+/* Masquer le label "Sujet" */
+.hidden {
+    display: none;
+}
+
+/* Agrandir le rectangle du commentaire */
+.contactform textarea {
+    width: 100%; /* Ajustez la largeur à 100% */
+    height: 100px; /* Augmentez la hauteur à votre convenance */
+}

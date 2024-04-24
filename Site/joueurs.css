@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alignement des éléments vers la gauche */
+    justify-content: center; /* Centrage vertical des éléments */
+    margin: 0 auto; /* Centre la div horizontalement */
+    max-width: 600px; /* Largeur maximale de la container */
+    padding: 20px; /* Espacement interne */
+    border: 1px solid #ccc; /* Bordure */
+    border-radius: 5px; /* Coins arrondis */
+}
+
+.performance {
+    margin-bottom: 10px; /* Marge en bas pour espacer les performances */
+}
+
+img {
+    max-width: 100%; /* Assurez-vous que l'image ne dépasse pas la largeur de son conteneur */
+    height: auto; /* Garantit le redimensionnement proportionnel de l'image */
+    border-radius: 5px; /* Coins arrondis pour l'image */
+}
